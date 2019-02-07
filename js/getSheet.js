@@ -12,7 +12,9 @@ function getSheet(id) {
         let store = {};
         for (var b = 0; b < obj.length; b++) {
           let ok = obj[b].split(":");
-          store[ok[0].trim()] = ok[1].trim();
+          let name = ok[0].trim();
+          ok.shift();
+          store[name] = ok.join(":").trim();
         }
         stocks[entrys[a].title.$t] = store
       }
