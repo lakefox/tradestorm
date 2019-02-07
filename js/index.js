@@ -14,7 +14,7 @@ function update() {
                 Buy Price
               </div>
               <div class="buy_price">
-                ${res[stock].targetbuyprice}
+                ${res[stock].buyprice}
               </div>
               <div class="choice">
                 ${res[stock].buy}
