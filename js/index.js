@@ -1,12 +1,16 @@
 function update() {
   getSheet("13OKP_hxz97LrO0bLyI_WiyL-JDHDkDZ5tP0vHAdpq5k").then((res) => {
+    console.log(res);
     var html = "";
     for (var stock in res) {
       if (res.hasOwnProperty(stock)) {
         html += `
         <div class="box">
           <div class="head">
-            ${res[stock].fullname} (${stock}) <span class="price">${res[stock].price}</span>
+            <div class="head_name">${res[stock].fullname} (${stock})</div><div class="price">${res[stock].price}</div>
+          </div>
+          <div class="your_info">
+            Shares: ${res[stock].totalshares}<br>Profit: ${res[stock].profit}
           </div>
           <div class="content">
             <div class="col">
