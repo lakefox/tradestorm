@@ -24,7 +24,7 @@
 
     <!-- Fonts -->
     <link href='https://unpkg.com/boxicons@1.7.1/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css?family=Staatliches|Oswald:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches|Oswald:700|Roboto+Slab:700|Roboto|Nunito" rel="stylesheet">
 
   </head>
   <body>
@@ -33,10 +33,24 @@
       <i class='bx bxs-bolt'></i> TRADE STORM <a id="edit" target="_blank" href="https://docs.google.com/spreadsheets/d/13OKP_hxz97LrO0bLyI_WiyL-JDHDkDZ5tP0vHAdpq5k/edit?usp=sharing"><i class='bx bx-file'></i></a>
     </div>
 
+    <div id="stock_news">
+      <div id="exit" onclick="exit()">
+        <i class='bx bx-x'></i>
+      </div>
+      <div class="title">
+        News
+      </div>
+      <div id="news_feed">
+
+      </div>
+    </div>
+
     <div class="center_col">
 
     </div>
 
+    <script src="https://momentjs.com/downloads/moment.min.js" charset="utf-8"></script>
+    <script src="./js/webHose.js" charset="utf-8"></script>
     <script src="./js/getSheet.js" charset="utf-8"></script>
     <script src="./js/index.js" charset="utf-8"></script>
   </body>
